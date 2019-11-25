@@ -12,15 +12,12 @@ const styles = StyleSheet.create({
   small: {
     fontSize: 24
   },
-  lessPadding: {
-    padding: 8
-  }
 });
 
-const StyledText = ({ children, lessPadding, large, style, ...other }) => {
+const StyledText = ({ children, large, style, ...other }) => {
 
   const computedStyles = [
-    styles[lessPadding ? 'lessPadding' : 'root'],
+    styles.root,
     styles[large ? 'large' : 'small'],
   ];
 
@@ -43,7 +40,6 @@ const StyledText = ({ children, lessPadding, large, style, ...other }) => {
 
 StyledText.defaulProps = {
   large: false,
-  lessPadding: false,
 };
 
 StyledText.propTypes = {

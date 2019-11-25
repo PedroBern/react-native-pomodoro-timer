@@ -30,24 +30,22 @@ const PrimaryControls = React.memo(({
   paused,
   togglePause,
   reset,
-}) => {
-  return (
-    <View style={styles.root}>
-      <StyledButton
-        style={styles.button}
-        onPress={togglePause}
-        title={paused ? 'PLAY' : 'PAUSE'}
-      />
-      <StyledButton
-        title='RESET'
-        onPress={reset}
-      />
-      {!paused && (
-        <Decrease />
-      )}
-    </View>
-  )
-});
+}) => (
+  <View style={styles.root}>
+    <StyledButton
+      style={styles.button}
+      onPress={togglePause}
+      title={paused ? 'PLAY' : 'PAUSE'}
+    />
+    <StyledButton
+      title='RESET'
+      onPress={reset}
+    />
+    {!paused && (
+      <Decrease />
+    )}
+  </View>
+));
 
 PrimaryControls.propTypes = {
   reset: PropTypes.func.isRequired,

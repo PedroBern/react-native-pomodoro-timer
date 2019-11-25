@@ -42,7 +42,7 @@ export default (state, action) => {
       return {
         ...state,
         work: true,
-        paused: value !== state.time ? true : false,
+        paused: true,
         time: action.value,
         initialTime: action.value
       };
@@ -52,7 +52,7 @@ export default (state, action) => {
       const value = action.value > 0 ? action.value : 0;
       return {
         ...state,
-        paused: value !== state.breakTime ? true : false,
+        paused: true,
         breakTime: value,
         work: true,
       };

@@ -1,13 +1,6 @@
 import React  from 'react';
 import PropTypes from 'prop-types';
-import { StyleSheet, Text } from 'react-native';
 import connectToContext from '../context';
-
-const styles = StyleSheet.create({
-  time: {
-    fontSize: 48,
-  }
-});
 
 const Decrease = React.memo(({
   decrease

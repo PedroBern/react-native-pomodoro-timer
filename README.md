@@ -1,5 +1,5 @@
 # React Native - Pomodoro Timer
-This is my first project with React Native and Expo.
+Simple Pomodoro Timer with React Native and Expo.
 
 ## Requirements
 

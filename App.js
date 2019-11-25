@@ -1,11 +1,11 @@
 import React from 'react';
 import { ContextProvider } from './context';
 import {
-  DisplayTime,
-  PrimaryControls,
-  Title,
   RootView,
-  SecondaryControls
+  Title,
+  DisplayTime,
+  SecondaryControls,
+  PrimaryControls
 } from './components';
 
 export default function App() {

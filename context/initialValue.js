@@ -1,5 +1,5 @@
 export default {
-  paused: false,
+  paused: true,
   time: 1500,
   initialTime: 1500,
   breakTime: 0,
